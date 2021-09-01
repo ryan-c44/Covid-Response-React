@@ -1,0 +1,656 @@
+/*
+
+CSS Checklist
+
+1. Header top bar style
+2. Navigation bar style
+
+*/
+
+*{margin: 0;}
+
+.base-container{
+  margin: auto;
+}
+
+.login-main{
+  background-color: #0D3155;
+  height:100vh;
+}
+
+.login-header{
+  color: #F1F6F6;
+  text-align: center;
+  margin:auto;
+  height: 200px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight:bold;
+  letter-spacing: 1px;
+  vertical-align: middle;
+  position:relative;
+  top: 100px;
+  font-size: 40px;
+  
+}
+
+.login-box{
+  margin:auto;
+  height: 490px;
+  width: 540px;
+  background-color: #F1F6F6;
+  display: flex;
+  flex-direction: column;
+  padding:10px;
+  border-radius: 20px;
+  position: relative;
+  top: 70px;
+}
+
+.login-box-header{
+  margin-top: 40px;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #0D3155;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.form{
+  margin:auto;
+}
+
+.form-group{
+  margin-bottom: 15px;
+}
+
+.base-container input[type=text]{
+  width:200px;
+  height:20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: whitesmoke;
+  border: 2px solid lightgrey;
+  color: lightslategray;
+  font-size: large;
+}
+
+.base-container input[type=password]{
+  width:200px;
+  height:20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: whitesmoke;
+  border: 2px solid lightgrey;
+  color: lightslategray;
+  font-size: large;
+}
+
+.base-container input[type="checkbox"]{
+  width: 20px;
+}
+
+input[type=date] {
+  width:200px;
+  height:30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: whitesmoke;
+  border: 2px solid lightgrey;
+  color: lightslategray;
+  font-size: large;
+}
+
+.base-container label{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 17px;
+  color: lightslategray;
+}
+
+.show-password{
+  margin:auto;
+  margin-top: 15px;
+}
+
+.remember-me{
+  margin:auto;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  height: 5px;
+}
+
+.buttons{
+
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 1px;
+}
+
+.sign-in-button-container{
+  margin-bottom: 20px;
+}
+
+.base-container button {
+  width: 210px;
+  height: 27px;
+  background-color: #0D3155;
+  color: #F1F6F6;
+  transition-duration: 0.4s;
+  border:none;
+}
+
+
+.login-footer{
+  margin:auto;
+  color: #9acbeb;
+  position: relative;
+  top: 170px;
+  width: 500px;
+}
+
+.password-recovery{
+  margin:auto;
+  margin-top: 10px;
+}
+
+
+.privacy-policy{
+  margin-left: 100px;
+}
+
+
+.terms-of-use{
+  margin-left: 100px;
+}
+
+.form-group p{
+  color: red;
+}
+
+
+
+/*========================================================*/
+
+.container {
+    width: 100%;
+    position: fixed;
+    height: auto;
+}
+
+header .topBar {
+    min-height: 58px;
+    background-color: #0D3155;
+}
+
+header .topBar h2 span a {
+    text-decoration: none;
+    color: #95C5F4;
+    font-size: 16px;
+}
+
+header h2 {
+    color: #95C5F4;
+    margin: 0;
+    padding: 20px;
+}
+
+.right {
+    float: right;
+}
+
+/* =================================================================== */
+
+#nav-wrap ul, #nav-wrap li, #nav-wrap a {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+#nav-wrap {
+    font: 12px 'opensans-bold', sans-serif;
+    width: 100%;
+    letter-spacing: 1px;
+ }
+ .opaque { background-color:rgba(0, 0, 0, .5); }
+ 
+ /* hide toggle button */
+ #nav-wrap > a.mobile-btn { display: none; }
+ 
+ ul#nav {
+    min-height: 52px;
+    width: auto;
+    background-color:#F1F6F6;
+    /* center align the menu */
+    text-align: center;
+ }
+ ul#nav li {
+    list-style: none;
+    height: 48px;
+    display: inline-block;
+ }
+ 
+ /* Links */
+ ul#nav li a {
+ 
+ /* 8px padding top + 8px padding bottom + 32px line-height = 48px */
+ 
+    display: inline-block;
+    padding: 10px 20px;
+    line-height: 32px;
+     text-decoration: none;
+    text-align: left;
+    color: #0D3155;
+    font-weight: 700;
+    font-size: 14px;
+ 
+     -webkit-transition: color .2s ease-in-out;
+     -moz-transition: color .2s ease-in-out;
+     -o-transition: color .2s ease-in-out;
+     -ms-transition: color .2s ease-in-out;
+     transition: color .2s ease-in-out;
+ }
+ 
+ ul#nav li a:active { background-color: transparent !important;}
+ ul#nav li.current a { font-weight: 600; }
+ ul#nav li a:hover {background-color: #0D3155; color: #F1F6F6;} 
+
+
+/* ================================================================= */
+
+/* Make Responsive */
+
+#check-in {
+    
+}
+
+#check-in .check-in-box {
+    margin: 50px auto;
+    border-radius: 20px;
+    /* optional size in px or %: */
+    width: 35%;
+    height: 60%;
+    background-color: #F1F6F6;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    padding: 15px;
+    border: 1px solid #0D3155
+}
+
+#check-in .check-in-box h2 {
+    color: #0D3155;
+    text-transform: uppercase;
+}
+
+#check-in label {
+    font-size: 14px;
+    color: #0D3155;
+}
+
+#check-in input[type=text], select {
+    width: 50%;
+    padding: 15px 15px;
+    margin: 7px auto;
+    display: block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  #check-in input[type=date], select {
+    width: 50%;
+    padding: 7px 15px;
+    margin: 10px auto;
+    display: block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  #check-in input[type=submit] {
+    width: 50%;
+    background-color: #0D3155;
+    color: white;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 15px auto;
+  }
+
+  #check-in button {
+    width: 50%;
+    height: 40px;
+    background-color: #0D3155;
+    color: white;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 15px auto;
+  }
+
+  .checked-in-container {
+    margin: 50px auto;
+    background-color: #F1F6F6;
+    /* optional size in px or %: */
+    width: 35%;
+    border-radius: 20px;
+    justify-content: center;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #0D3155;
+  }
+
+  .checked-in-container h3 {
+      color: #0D3155;
+  }
+
+  .checked-in-arrow {
+    width: 1px;
+    height: 50px;
+    margin: auto;
+    border-left: 5px dotted #0D3155;
+  }
+
+/* ======================================================================  */
+
+.all__news {
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .news {
+    max-width: 500px;
+    padding: 30px;
+    border: 1px solid #0D3155;
+    border-radius: 5px;
+    background-color: #F1F6F6;
+  }
+  
+  .news__title {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #95C5F4;
+    color: #0D3155;
+  }
+  
+  .head__text {
+    margin-top: 30px;
+    text-align: center;
+    color: #0D3155;
+    text-transform:uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .news__desc {
+    padding-top: 10px;
+    line-height: 25px;
+    font-size: 14px;
+    padding-bottom: 10px;
+  }
+  
+  .news__author {
+    margin-right: 10px;
+    color: purple;
+  }
+  
+  .news__published {
+    margin-right: 10px;
+  }
+  
+  .news__source,
+  .news__published {
+    display: inline-block;
+    margin-top: 10px;
+    color: rgb(122, 122, 122);
+  }
+  
+  .news__url {
+      text-decoration: none;
+  }
+
+  .news_container {
+    margin: auto;
+    border-radius: 20px;
+    /* optional size in px or %: */
+    width: 60%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 15px;
+    
+  }
+
+  /* ========================================================= */
+
+  .phase-container {
+    margin: 50px auto;
+    background-color: #F1F6F6;
+    /* optional size in px or %: */
+    width: 45%;
+    border: 1px solid #0D3155;
+    border-radius: 5px;
+    justify-content: center;
+    padding: 15px;
+  }
+
+  .phase-container ul {
+      list-style-type:circle;
+  }
+
+  .phase-container h3 {
+      text-align: center;
+      color: #0D3155;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #0D3155;
+  }
+
+  .current-title {
+      text-align: center;
+      color: #0D3155;
+  }
+
+  /* ============================================================ */
+
+  .account-container {
+    margin: 50px auto;
+    width: 35%;
+    padding: 10px;
+   
+  }
+
+  .account-container h2 {
+    color: #0D3155;
+    text-transform: uppercase;
+}
+
+
+.account-container h3{
+  color: #0D3155;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+
+  .account-edit {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #F1F6F6;
+    border: 1px solid #0D3155;
+  }
+
+  .account-edit h2 {
+    color: #0D3155;
+    text-transform: uppercase;
+}
+
+ .account-container input[type=text], select {
+    width: 50%;
+    padding: 15px 15px;
+    margin: 7px auto;
+    display: block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  .account-container input[type=date], select {
+    width: 50%;
+    padding: 7px 15px;
+    margin: 10px auto;
+    display: block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .account-container input[type=submit] {
+    width: 50%;
+    background-color: #0D3155;
+    color: white;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 15px auto;
+  }
+
+  .account-container button {
+    width: 50%;
+    height: 40px;
+    background-color: #0D3155;
+    color: white;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 15px auto;
+  }
+
+
+
+  /* ============================================================== */
+
+  .big-container {
+    margin: 50px auto;
+    width: 40%;
+    padding: 10px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-gap: 10px;
+    background-color: #0D3155;
+    padding: 20px;
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 10px;
+  }
+  
+  .grid-container > div {
+    text-align: center;
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: #95C5F4;
+    min-height: 80px;
+    color:white;
+    padding: 5px;
+  }
+
+  .grid-container div span {
+    font-size: 14px;
+    color: white;
+  }
+
+  .grid-span {
+    color: #0D3155;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  /* =================================================================== */
+
+  .certification {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #F1F6F6;
+  }
+
+  .certification ul li {
+    text-decoration: none;
+    list-style-type: none;
+  }
+  
+  /* ========================================= */
+
+  .button-container {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  /* ========================================= */
+
+  
+
+  .message-container p {
+    padding: 5px;
+  }
+
+  .message-box{
+    text-align: center;
+    margin: 20px auto;
+    width: 35%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #F1F6F6;
+    border: 1px solid #0D3155;
+    font-size: large;
+
+  }
+
+  /*=======================================*/
+
+  .sent-box{
+    text-align: center;
+    margin: 20px auto;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #F1F6F6;
+    border: 1px solid #0D3155;
+    font-size: large;
+  }
+
+  .notification-box{
+    text-align: center;
+    margin: 20px auto;
+    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #F1F6F6;
+    border: 1px solid #0D3155;
+    font-size: large;
+  }
+
+  .notification-banner{
+    text-align: center;
+  }
+
+  .message-header{
+    text-align: center;
+    margin-top: 20px;
+    color:#0D3155;
+    text-transform: uppercase;
+
+  }
+  
